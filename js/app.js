@@ -22,8 +22,6 @@ form.addEventListener('submit', event => {
 
 	if (email === '') {
 		addErrorTo('email', 'Looks like this is not an email');
-	} else if (!isValid(email)) {
-		addErrorTo('email', 'Email is not valid');
 	} else {
 		removeErrorFrom('email');
 	}
